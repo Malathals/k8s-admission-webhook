@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
       - name: webhook
-        image: webhook:latest
+        image: malathals14/k8s-webhook-repo:v1.0.0
+        imagePullPolicy: Always
         ports:
         - containerPort: 8443
         resources:
